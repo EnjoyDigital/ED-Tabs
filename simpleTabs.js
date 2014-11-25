@@ -9,7 +9,9 @@
 			// If no tabs are present return
 			if(!$('[data-tab-name]')){ return; }
 			
-			var settings = $.extend({}, options);
+			var settings = $.extend({
+				callback: function(){}
+			}, options);
 			
 			// Create the tabs container
 			var $tabs = $('<div/>', { 'class': 'simpleTabs' })
@@ -28,6 +30,8 @@
 					$('[data-tab-name]').hide();
 					$(this).addClass('active');
 					$tab.show();
+					// call the callback and apply the scope:
+					options.callback.call(this);
 				});;
 
 				// Hide tab
