@@ -30,9 +30,13 @@
 					$('[data-tab-name]').hide();
 					$(this).addClass('active');
 					$tab.show();
-					// call the callback and apply the scope:
-					options.callback.call(this);
-				});;
+					
+					if(options.callback){
+						// call the callback and apply the scope:
+						options.callback.call(this);
+					}
+					
+				});
 
 				// Hide tab
 				$(this).hide();
