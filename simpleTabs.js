@@ -25,7 +25,7 @@
 			$('[data-tab-name]').each(function(){
 				var $tab = $(this);
 				// Create tab for this item
-				$('<li/>', { 'text': $tab.data('tab-name') }).appendTo($ul).click(function(){
+				$('<li/>', { 'text': $tab.data('tab-name'), 'class': $tab.data('class-name') }).appendTo($ul).click(function(){
 					$('li', $ul).removeClass('active');
 					$('[data-tab-name]').hide();
 					$(this).addClass('active');
