@@ -1,4 +1,4 @@
-$.fn.simpleTabs = function(options){
+$.fn.edTabs = function(options){
 	// If no tabs are present return
 
 	var settings = $.extend({
