@@ -1,14 +1,14 @@
-Simple Tabs
+ED Tabs
 =========
 
-Simple tabs creates a very basic tab interface
+ED tabs creates a very basic tab interface
 
 ###How to use
 
-Include Simple Select
+Include ED tabs
 
 ```html
-<script src="js/simpleTabs.min.js"></script>
+<script src="js/edTabs.min.js"></script>
 ```
 
 ###Create your tabs
@@ -27,7 +27,7 @@ Include Simple Select
 ```html
 <script>
 $(function(){
-	$.simpleTabs();
+	$.edTabs();
 });
 </script>
 ```
